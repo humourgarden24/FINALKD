@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: #f1eee7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 70% 45%, rgba(180, 130, 55, 0.12), transparent 30%),
+    #080808;
+}
+
+.background-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 70px 70px;
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 32px 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: #aaa;
+}
+
+.nav-links span {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-links span:hover {
+  color: #f1eee7;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 17vh;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 25px;
+
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: #c9a45c;
+}
+
+h1 {
+  margin: 0;
+
+  font-size: clamp(65px, 9vw, 130px);
+  line-height: 0.86;
+  letter-spacing: -0.06em;
+  font-weight: 600;
+}
+
+h1 span {
+  color: #c9a45c;
+}
+
+.hero-content p {
+  max-width: 570px;
+  margin: 35px auto;
+
+  color: #999;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.explore-button {
+  padding: 16px 25px;
+
+  border: 1px solid rgba(201, 164, 92, 0.7);
+  background: transparent;
+  color: #f1eee7;
+
+  font-size: 11px;
+  letter-spacing: 0.2em;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.explore-button span {
+  margin-left: 18px;
+  color: #c9a45c;
+}
+
+.explore-button:hover {
+  background: #c9a45c;
+  color: #080808;
+}
+
+.explore-button:hover span {
+  color: #080808;
+}
+
+.hero-footer {
+  position: absolute;
+  bottom: 25px;
+  left: 50px;
+  right: 50px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: #555;
+}/* Museum extension: retain the original entrance design. */
+.navbar{background:#080808}.logo{background:none;border:0;color:#f1eee7;padding:0}.nav-links button{background:none;border:0;padding:5px 0;color:#aaa;font-size:11px;letter-spacing:.14em}.nav-links button:hover{color:#f1eee7}.count{color:#c9a45c;margin-left:5px}.hero{min-height:calc(100svh - 82px)}.hero-content{padding:15vh 24px 125px}.hero-content h1{color:#f1eee7}.entrance-note{font-size:11px;color:#6d6a60;margin-top:25px;letter-spacing:.09em}.eyebrow{text-transform:uppercase;line-height:1.6}.museum-main{max-width:1600px;margin:0 auto;padding:38px 48px 25px;outline:none}.page-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.page-heading h1,.detail-heading h1{font-size:clamp(27px,4vw,45px);letter-spacing:-.04em;line-height:1.12}.page-heading .eyebrow,.detail-heading .eyebrow{margin-bottom:10px;font-size:10px}.page-heading p{color:#939793;font-size:14px;margin:12px 0 0}.collection-count{font-size:44px;font-weight:300;color:#c9a45c;display:flex;flex-direction:column;text-align:right}.collection-count span{font-size:9px;letter-spacing:.2em;margin-top:8px}.scene{position:relative;background:#111416;border:1px solid #30312c;border-radius:4px;overflow:hidden;height:clamp(360px,55vh,650px)}.canvas-host{position:absolute;inset:0}.canvas-host canvas{display:block;touch-action:none}.scene-hint{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);background:#101418dc;color:#d6d8d1;border:1px solid #41463e;padding:11px 17px;border-radius:3px;font-size:11px;white-space:nowrap;pointer-events:none}.exhibit-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:16px}.exhibit-card{display:flex;align-items:center;gap:20px;padding:23px;text-align:left;background:#131615;border:1px solid #30322c;color:#f1eee7;border-radius:4px;transition:background .2s,border-color .2s}.exhibit-card:hover{background:#1c201b;border-color:#c9a45c}.exhibit-number{align-self:flex-start;font-size:10px;color:#c9a45c;letter-spacing:.1em;padding-top:5px}.exhibit-card h2{font-size:21px;margin:0;font-weight:500;letter-spacing:-.025em}.exhibit-card p{font-size:12px;color:#979b90;margin:6px 0 9px}.era{font-size:10px;color:#777d74}.card-arrow{margin-left:auto;color:#c9a45c;font-size:23px}.model-note{font-size:11px;color:#7c8077;margin:18px 0;text-align:center}.detail-heading{display:flex;align-items:center;gap:28px;margin-bottom:28px}.detail-heading>div{flex:1}.secondary{color:#d1cec4;background:#151816;border:1px solid #434538;padding:12px 16px;font-size:11px;letter-spacing:.09em;border-radius:3px}.secondary:hover{border-color:#c9a45c}.exploration{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(310px,1fr);gap:22px;align-items:start}.model-wrap .scene{height:clamp(450px,66vh,740px)}.model-caption{display:flex;justify-content:space-between;margin-top:14px;font-size:9px;letter-spacing:.12em;color:#8c9389}.learning-panel{border:1px solid #376465;border-radius:4px;background:linear-gradient(135deg,#102326e6,#111917);box-shadow:inset 0 0 40px #49dee508}.panel-tabs{display:flex;border-bottom:1px solid #305052}.panel-tabs button{flex:1;background:none;border:0;color:#8aadaa;text-transform:uppercase;font-size:10px;padding:19px 8px;letter-spacing:.05em;border-bottom:2px solid transparent}.panel-tabs button[aria-selected=true]{color:#98efea;border-bottom-color:#72ddd8;background:#4de6e60a}.panel-body{padding:28px}.panel-body .eyebrow{color:#84d8d4;font-size:9px;margin-bottom:12px}.panel-body h2{font-size:27px;font-weight:400;letter-spacing:-.035em;margin:0 0 16px}.panel-body p{font-size:13px;color:#b5c4be}.field-note{min-height:92px}.feature-list{display:flex;flex-direction:column;gap:9px;margin:24px 0}.feature-list button{display:flex;align-items:center;gap:12px;padding:13px 12px;background:#ffffff04;border:1px solid #3c5550;border-radius:3px;text-align:left;color:#d6e4df;font-size:12px}.feature-list button:hover,.feature-list button.selected{border-color:#78ddd7;background:#5ae3e315}.feature-number{color:#80ded8;border:1px solid #406e6a;border-radius:50%;width:23px;height:23px;display:grid;place-items:center;flex-shrink:0}.feature-check{margin-left:auto;color:#93cdc5}.muted{color:#8eaaa0!important}.small{font-size:11px!important}.source-link{display:inline-block;margin-top:22px;font-size:10px;text-decoration:none;border-bottom:1px solid #659e93;padding-bottom:4px}.hotspot{position:absolute;transform:translate(-50%,-50%);width:34px;height:34px;border:1px solid #9dfcf2;border-radius:50%;background:#144c4de8;box-shadow:0 0 0 6px #7bf1ea18,0 0 24px #7bf1ea60;color:white;font-size:13px;visibility:hidden}.hotspot:hover,.hotspot.active{background:#b5eee3;color:#0c2629;box-shadow:0 0 0 8px #7bf1ea30}.timeline{list-style:none;border-left:1px solid #448a83;margin:26px 0 0 5px;padding-left:24px}.timeline li{position:relative;margin-bottom:24px}.timeline li:before{content:'';position:absolute;left:-29px;top:5px;width:9px;height:9px;background:#84ddd0;border-radius:50%}.timeline strong{font-size:13px;color:#9ad8cc}.timeline p{margin:8px 0 0;font-size:12px}.quiz fieldset{border:0;margin:22px 0;padding:0}.quiz legend{font-size:13px;line-height:1.6;margin-bottom:12px;color:#d5e4dd}.answer{display:flex;gap:10px;padding:11px 8px;align-items:center;border:1px solid #37534c;margin-top:7px;font-size:12px;cursor:pointer;border-radius:3px}.answer input{accent-color:#8fded0}.answer.correct{border-color:#91dab5;background:#67d59918}.feedback{font-size:11px!important;color:#a5d3c4!important}.quiz-result{border:1px solid #609d7c;padding:17px}.quiz-result strong{color:#a3dfb9}.quiz .explore-button{font-size:10px;padding:14px 18px}.teleport{position:fixed;inset:0;z-index:10;background:#050c10f5;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:14px}.teleport h2{font-size:35px;font-weight:400;letter-spacing:-.03em;margin:0}.teleport .eyebrow{margin:18px 0 0;color:#9bd9d2;font-size:10px}.portal-ring{width:170px;height:170px;border:2px solid #80e4e0;border-radius:50%;box-shadow:0 0 45px #71dfdf5a,inset 0 0 45px #71dfdf5a;animation:portal .85s ease-in-out both}.modal{width:min(600px,calc(100% - 32px));max-height:85svh;overflow:auto;background:#111a18;color:#f1eee7;border:1px solid #6b8b77;padding:38px;border-radius:5px}.modal::backdrop{background:#000b;backdrop-filter:blur(5px)}.modal h2{font-size:29px;font-weight:400;letter-spacing:-.035em}.modal p{font-size:13px}.close-button{position:absolute;top:10px;right:15px;background:none;border:0;color:#c5dbd0;font-size:28px}.journey-row{display:flex;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid #2c4037;padding:17px 0}.journey-row strong{font-size:15px}.journey-row p{font-size:11px;margin:7px 0 0;color:#9aafa3}.journey-row>span{font-size:11px;color:#bad4ba}.scene-error{position:absolute;inset:0;display:grid;place-content:center;padding:35px;text-align:center;line-height:1.8;color:#b7d2cc;max-width:600px;margin:auto}.storage-notice{font-size:12px;color:#e4c982;text-align:center}@keyframes portal{from{transform:scale(.25) rotateX(65deg);opacity:0}to{transform:scale(1.5) rotateX(0);opacity:1}}
+@media(max-width:1000px){.navbar{padding:25px 28px}.museum-main{padding:28px 24px}.exhibit-card{padding:17px;gap:10px}.exhibit-card h2{font-size:18px}.exploration{grid-template-columns:minmax(0,1fr) minmax(300px,.9fr)}.panel-body{padding:22px}}
+@media(max-width:760px){.navbar{padding:23px 18px;gap:12px;flex-wrap:wrap}.logo{font-size:12px;letter-spacing:.15em}.nav-links{gap:17px}.nav-links button{font-size:9px;letter-spacing:.06em}.hero-content{padding:15vh 18px 110px}.hero-content h1{font-size:clamp(47px,11vw,82px)}.hero-content .eyebrow{font-size:9px;letter-spacing:.15em}.hero-footer{left:20px;right:20px;font-size:7px;letter-spacing:.05em;gap:15px}.museum-main{padding:26px 16px}.page-heading{gap:12px}.page-heading p{font-size:12px}.collection-count{font-size:30px}.collection-count span{font-size:7px}.scene{height:420px}.exhibit-cards{grid-template-columns:1fr}.exhibit-card{padding:19px}.exhibit-card h2{font-size:21px}.detail-heading{gap:12px;flex-wrap:wrap}.detail-heading>div{order:3;flex-basis:100%;margin-top:8px}.detail-heading>.secondary:last-child{margin-left:auto}.exploration{grid-template-columns:1fr}.model-wrap .scene{height:440px}.panel-body{padding:25px}.scene-hint{font-size:9px;padding:10px 12px}.modal{padding:32px 23px}.model-caption{font-size:8px;letter-spacing:.07em}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.scene-loading{display:grid;place-items:center;color:#a6d1c7;font-size:13px}
+/* The museum hall follows the bright architectural reference. */
+.gallery-navbar{background:#f5f3ee;border-bottom-color:#dddcd5}.gallery-navbar .logo{color:#28322c}.gallery-navbar .nav-links button{color:#57645c}.gallery-navbar .nav-links button:hover{color:#1d3025}.gallery-navbar .count{color:#856b3e}.gallery-main{max-width:none;background:#f5f3ee;min-height:calc(100svh - 88px);padding-top:32px}.gallery-main .page-heading h1{color:#25312b;font-weight:500}.gallery-main .page-heading p{color:#657169}.gallery-main .eyebrow{color:#876c3f}.gallery-main .collection-count{color:#887140}.gallery-main .scene.hall{height:clamp(500px,68vh,850px);border-color:#dbded8;border-radius:5px;background:#e4e8e7}.gallery-main .scene-hint{background:#fffffff0;border-color:#cccec4;color:#36473b;box-shadow:0 2px 14px #28322112}.gallery-main .exhibit-card{background:#fff;border-color:#deded5;color:#29372e}.gallery-main .exhibit-card:hover{background:#eeeee4;border-color:#9b8960}.gallery-main .exhibit-card p{color:#6b776e}.gallery-main .era{color:#828779}.gallery-main .exhibit-number,.gallery-main .card-arrow{color:#8c7548}.gallery-main .model-note{color:#788175}.gallery-main .scene-error{color:#364b3f}.gallery-main .scene-loading{color:#496351}.gallery-main .storage-notice{color:#775c18}@media(max-width:760px){.gallery-main .scene.hall{height:560px}.gallery-main .scene-hint{white-space:normal;min-width:245px;text-align:center;line-height:1.6;font-size:10px;bottom:15px}}

@@ -1,0 +1,2 @@
+:root{font-family:Arial,Helvetica,sans-serif;color:#f1eee7;background:#080808;color-scheme:dark;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+*{box-sizing:border-box}body{margin:0}#root{min-height:100svh;width:100%}button,a,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:2px solid #78e7e3;outline-offset:5px}button:disabled{cursor:default;opacity:.5}a{color:#a5e7e4}p{line-height:1.7}h1,h2,h3,p{overflow-wrap:break-word}button{touch-action:manipulation}
