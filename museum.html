@@ -2,13 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="0; url=/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Kaal Darpan — Virtual Heritage Museum</title>
+    <script>
+      // Legacy entry: keep old museum.html / museum.html#gallery links working.
+      location.replace('/' + location.hash);
+    </script>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <script type="module" src="/js/museum-entry.js"></script>
+  <body style="background:#08060c">
+    <p style="color:#b79a62;font-family:Arial,sans-serif;padding:24px">Redirecting to <a href="/" style="color:#b79a62">Kaal Darpan</a>…</p>
   </body>
 </html>

@@ -11,7 +11,7 @@ Extract the ZIP and open the extracted project folder containing package.json in
     npm install
     npm run dev
 
-Open http://localhost:5175 for the animated cover page, then use **Enter the Museum Gallery** to open the museum (`museum.html`, which mounts the React app from `src/main.jsx`). Keep the terminal running. If port 5175 is already occupied by your old project, stop the old server with Ctrl+C first.
+Open http://localhost:5175 for the cover page, then use **Begin Exploration** (an antique-clock transition plays) to enter the museum. `index.html` mounts the React app from `src/main.jsx`; `museum.html` is only a legacy redirect to `/` (`/#gallery` opens the gallery hall directly). Keep the terminal running. If port 5175 is already occupied by your old project, stop the old server with Ctrl+C first.
 
 The downloaded ZIP intentionally excludes node_modules. npm install recreates it correctly for your computer.
 
@@ -33,8 +33,11 @@ Models are simplified procedural learning placeholders, not measured reconstruct
 
 ## Files
 
-- index.html, css/styles.css, js/app.js: animated cover page (vanilla HTML/CSS/JS). The museum URL is the `href` of the `[data-museum-link]` button in index.html.
-- museum.html: Vite entry page for the museum; js/museum-entry.js lets `museum.html#gallery` open straight into the gallery hall
+- index.html: Vite entry page; mounts the React app (single cover)
+- museum.html: legacy redirect to `/` (keeps the hash, so `museum.html#gallery` still works)
+- src/Entrance.jsx, src/Cover.css: dark heritage cover with GSAP text reveals and a slow mandala/clock dial
+- src/ClockTransition.jsx: 1.5s brass clock transition used for Begin Exploration and monument selection
+- src/Sparkles.jsx: falling gold glitter cursor layer (off on touch devices and with reduced motion)
 - src/App.jsx: entrance, navigation, transition, learning panels, quiz, progress
 - src/Scene.jsx: renderer, controls, picking, projected markers, cleanup
 - src/models.js: procedural monument and museum builders
